@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FilmLens: Interactive Exploration of Global Cinema</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="lib/d3.v7.min.js"></script>
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 20px;
+    }
+    .grid-item {
+      background: #f9f9f9;
+      padding: 10px;
+      border: 1px solid #ddd;
+    }
+    #pie-chart {
+      grid-column: span 2;
+    }
+  </style>
+</head>
+<body>
+  <h1>Films Dataset : Data Visualisation</h1>
+
+  <div class="grid-container">
+    <div id="genre-bar" class="grid-item"></div>
+    <div id="country-bar" class="grid-item"></div>
+    <div id="scatter-plot" class="grid-item"></div>
+    <div id="year-bar" class="grid-item"></div>
+    <div id="pie-chart" class="grid-item"></div>
+  </div>
+
+  <div class="tooltip" id="tooltip"></div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
